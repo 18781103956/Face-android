@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddClassActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/Relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/Text_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/Text_lb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="67dp"
+            android:layout_toRightOf="@+id/Text_back"
+            android:text="|   加入课程"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_ascertain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="73dp"
+            android:layout_toRightOf="@+id/Text_lb"
+            android:text="确定" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/Text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通过输入邀请码加入课程"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/in_ClassNum"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_inclassnum"/>
+
+</LinearLayout>

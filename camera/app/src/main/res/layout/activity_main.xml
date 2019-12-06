@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity"
+    android:background="#8EE5EE">
+
+
+    <TextView
+        android:id="@+id/ico_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人脸签到"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_user"
+        android:alpha="0.8"
+        android:hint="账号"
+        android:selectAllOnFocus="true"
+        android:minLines="1"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_user"
+        android:alpha="0.8"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:minLines="1"
+        android:imeOptions="actionNext"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/btnT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/btnWoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="老师"
+            android:layout_marginLeft="10dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_begin"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:background="#3399cc"/>
+
+    <TextView
+        android:id="@+id/btn_Sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#8EE5EE"
+        android:text="注册"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CameraActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/enter_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 添加班级"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/look_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看结果"
+            android:layout_gravity="right"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+
+    <ImageButton
+        android:id="@+id/bt_take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:src="@drawable/camera"
+        android:background="#FFFFFF"/>
+
+
+    <ImageView
+        android:id="@+id/iv_picture"
+        android:layout_marginTop="70dp"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        android:background="#808080"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"/>
+
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:text="签到"/>
+
+
+</LinearLayout>

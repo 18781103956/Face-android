@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResponseActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <RelativeLayout
+        android:id="@+id/Linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="#3399cc"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/pic_1"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/college"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学校:"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/pic_1"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/stu_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/college"
+            android:layout_toRightOf="@+id/pic_1"
+            android:paddingLeft="20dp"
+            android:text="学号:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stu_id"
+            android:layout_toRightOf="@+id/pic_1"
+            android:paddingLeft="20dp"
+            android:text="姓名:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/pic_1"
+            android:paddingLeft="20dp"
+            android:text="专业:"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:id="@+id/Linear_2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#66CD00">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Linear_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:background="#4F94CD">
+
+        <TextView
+            android:id="@+id/Sign_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="签到结果："
+            android:textSize="25sp" 
+            android:background="@drawable/bg_response"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/Sign_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="签到时间："
+            android:textColorHint="#000000"
+            android:textSize="25sp"
+            android:background="@drawable/bg_time"
+            android:layout_below="@+id/Sign_response"
+            android:layout_marginTop="100dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

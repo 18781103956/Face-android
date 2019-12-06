@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerActivity"
+    android:orientation="vertical"
+    android:background="#E0FFFF">
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/Text_id"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="输入账号："
+        android:background="@drawable/bg_register" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/Text_password"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="输入密码:"
+        android:background="@drawable/bg_register"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/Text_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="输入姓名:"
+        android:background="@drawable/bg_register"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp">
+
+        <RadioButton
+            android:id="@+id/btnT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/btnWoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:layout_marginLeft="10dp"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/Text_telphone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="电话号码:"
+        android:background="@drawable/bg_register"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/Text_school"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="学校:"
+        android:background="@drawable/bg_register"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/Text_academy"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="院系:"
+        android:background="@drawable/bg_register"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/Text_ID"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="学号/工号："
+        android:background="@drawable/bg_register"/>
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/Relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bt_take_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拍照" />
+        </RelativeLayout>
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/upload_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定注册"
+
+        android:background="#33ccff"/>
+
+</LinearLayout>
